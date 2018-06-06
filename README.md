@@ -1,2 +1,2 @@
 # MSTjquery
-Minimum Spanning Tree with fronend JS
+Minimum Spanning Tree with frontend JS and style by materializecss
