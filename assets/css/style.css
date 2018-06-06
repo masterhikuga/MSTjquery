@@ -1,0 +1,45 @@
+header, main, footer {
+    margin-left: 300px;
+  }
+
+
+
+main {
+    padding:10px;
+}
+
+.bb{
+    height:480px;
+    position: relative;
+}
+
+.draw {
+    position: relative;
+}
+
+.rounds{
+    border-radius: 30px;
+    padding: 5px 10px; 
+    width: 40px;
+    height: 30px; 
+    cursor: pointer;
+}
+
+.externalround{
+    padding: 20px 16px; 
+    width: 60px;
+    height: 60px; 
+    z-index:9;    
+    position: absolute;
+    border-radius:30px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        margin-left: 0;
+    }
+    .bb {
+        height:0;         
+        position: relative;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spanning tree</title>
+        <!--Import Google Icon Font-->
+        <link href="assets/materialize/css/fontgoogleapis.css" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="assets/materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>       
+        <ul id="slide-out" class="collapsible sidenav sidenav-fixed blue">
+            <li><div class="user-view">
+                    <div class="background">
+                    </div>
+                    <a href="#user"><img class="circle" src="assets/img/profil.jpg"></a>
+                    <a href="#name"><span class="white-text name">Muhammad Hafid S</span></a>
+                    <a href="#email"><span class="white-text email">1461600076</span></a>
+                    <a href="#email"><span class="white-text email">&copy;2018 All Right Reserved</span></a>
+                </div>
+            </li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Main</a></li>
+            <li>
+                <a class="waves-effect collapsible-header" href="#!">Algoritma</a>
+                <div class="collapsible-body indigo darken-3" >
+                    <a style="padding-left: 20px;" class="waves-effect white-text algo-0" href="#">Kruskal Algorithym</a><br />
+                    <a style="padding-left: 20px;" class="waves-effect white-text algo-1" href="#">Prims Algorithym</a><br />
+                    <a style="padding-left: 20px;" class="waves-effect white-text algo-2" href="#">Djikstra Algorithym</a><br />
+                
+                </div>
+            </li>
+        </ul>
+        <main class="nonchart">      
+            <div class="rovw">
+                <div class="col s12">
+                  <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Draw</span>
+                        <div class="grey lighten-4 draw" style="width:958px; height:450px;"> 
+                            <canvas class="canvas" width="958" height="450  " style="height:100%;width:100%;" id="canvas"></canvas>  
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name2" type="text" class="validate inputround">
+                                <label class="active " for="first_name2">Input lingkaran</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <span class="wektu"></span>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </main>
+
+        <main class="chart">
+            <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+        </main>
+
+
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/materialize/js/bin/materialize.min.js"></script>    
+        <script type="text/javascript" src="function/algo/kruskal.js"></script>    
+        <script type="text/javascript" src="function/algo/Prims.js"></script>    
+        <script type="text/javascript" src="function/algo/djikstra.js"></script>    
+        <script type="text/javascript" src="function/interface/time.js"></script>    
+        <script type="text/javascript" src="function/interface/ui.js"></script>    
+        <script type="text/javascript" src="function/interface/screen.js"></script> 
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>   
+    </body>
+</html>
